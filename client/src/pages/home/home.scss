@@ -1,0 +1,38 @@
+.home {
+  .homeContainer {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+
+      .left {
+        flex: 1;
+      }
+
+      .right {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .title {
+          font-size: 32px;
+          align-self: center;
+          margin-bottom: 20px;
+          color: rebeccapurple;
+          font-weight: 700;
+        }
+
+        .content {
+          display: flex;
+          gap: 50px;
+        }
+      }
+    }
+  }
+}

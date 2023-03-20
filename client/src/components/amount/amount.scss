@@ -1,0 +1,45 @@
+.amount {
+  flex: 2;
+  box-shadow: 1px 6px 13px 0px rgba(0, 0, 0, 0.57);
+  padding: 10px;
+  display: flex;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .formInput {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      label {
+        color: #555;
+        width: 16%;
+      }
+
+      select,
+      input {
+        padding: 10px;
+        width: 35%;
+      }
+
+      input {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid gray;
+      }
+    }
+
+    button {
+      padding: 10px;
+      width: 100px;
+      border: none;
+      background-color: teal;
+      color: white;
+      align-self: center;
+      cursor: pointer;
+    }
+  }
+}

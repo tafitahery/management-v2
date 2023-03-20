@@ -1,0 +1,39 @@
+.account {
+  box-shadow: 1px 6px 13px 0px rgba(0, 0, 0, 0.57);
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  label {
+    color: #555;
+  }
+
+  select {
+    padding: 10px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    input {
+      padding: 10px;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid gray;
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      width: 150px;
+      font-weight: bold;
+      background-color: teal;
+      color: white;
+      align-self: center;
+      cursor: pointer;
+    }
+  }
+}
