@@ -1,0 +1,35 @@
+.topbar {
+  background-color: rebeccapurple;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .left {
+    margin: 20px;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .right {
+    margin: 20px;
+    color: white;
+
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      li {
+        font-size: 24px;
+        cursor: pointer;
+
+        &:hover {
+          border-bottom: 2px solid white;
+        }
+      }
+    }
+  }
+}
