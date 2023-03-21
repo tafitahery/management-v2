@@ -3,6 +3,7 @@ import './account.scss';
 export default function Account() {
   return (
     <div className="account">
+      <h1>COMPTE</h1>
       <label htmlFor="">Choisir une compte</label>
       <select name="" id="">
         <option value=""> --- </option>

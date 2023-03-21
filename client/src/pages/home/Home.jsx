@@ -10,17 +10,11 @@ export default function Home() {
     <div className="home">
       <Topbar />
       <div className="homeContainer">
+        <div className="title">Caisse1</div>
         <div className="top">
-          <div className="left">
-            <Account />
-          </div>
-          <div className="right">
-            <div className="title">Caisse1</div>
-            <div className="content">
-              <Amount />
-              <List />
-            </div>
-          </div>
+          <Account />
+          <Amount />
+          <List />
         </div>
         <div className="bottom">bottom</div>
       </div>
