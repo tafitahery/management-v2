@@ -12,11 +12,15 @@ export default function Home() {
       <div className="homeContainer">
         <div className="title">Caisse1</div>
         <div className="top">
-          <Account />
-          <Amount />
-          <List />
+          <div className="left">
+            <Account />
+            <Amount />
+          </div>
+          <div className="center">
+            <List />
+          </div>
+          <div className="right">right</div>
         </div>
-        <div className="bottom">bottom</div>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 .list {
-  flex: 3;
   box-shadow: 1px 6px 13px 0px rgba(0, 0, 0, 0.57);
   padding: 10px;
+  height: 97%;
 
   h1 {
     font-size: 20px;
@@ -12,5 +12,26 @@
 
   .table {
     height: 87%;
+
+    .cellAction {
+      display: flex;
+      gap: 20px;
+
+      .editButton,
+      .deleteButton {
+        padding: 5px;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .editButton {
+        background-color: rgb(75, 75, 194);
+      }
+
+      .deleteButton {
+        background-color: crimson;
+      }
+    }
   }
 }

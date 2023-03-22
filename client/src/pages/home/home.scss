@@ -17,7 +17,22 @@
       display: flex;
       flex-wrap: wrap;
       gap: 50px;
-      height: 450px;
+
+      .left {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 100%;
+      }
+
+      .center {
+        flex: 5;
+      }
+
+      .right {
+        flex: 2;
+      }
     }
   }
 }

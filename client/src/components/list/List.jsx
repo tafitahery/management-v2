@@ -3,10 +3,10 @@ import './list.scss';
 import { DataGrid } from '@mui/x-data-grid';
 
 const columns = [
-  { field: 'date', headerName: 'Date', width: 150 },
-  { field: 'type', headerName: 'Type', width: 100 },
-  { field: 'montant', headerName: 'Montant', width: 150 },
-  { field: 'motifs', headerName: 'Motifs', width: 150 },
+  { field: 'date', headerName: 'Date', width: 200 },
+  { field: 'type', headerName: 'Type', width: 150 },
+  { field: 'montant', headerName: 'Montant', width: 200 },
+  { field: 'motifs', headerName: 'Motifs', width: 250 },
 ];
 
 const rows = [
@@ -83,16 +83,31 @@ const rows = [
 ];
 
 export default function List() {
+  const actionColumn = [
+    {
+      field: 'action',
+      headerName: 'Action',
+      width: 200,
+      renderCell: () => {
+        return (
+          <div className="cellAction">
+            <div className="editButton">Modifier</div>
+            <div className="deleteButton">Supprimer</div>
+          </div>
+        );
+      },
+    },
+  ];
+
   return (
     <div className="list">
       <h1>LISTE</h1>
       <DataGrid
         className="table"
         rows={rows}
-        columns={columns}
+        columns={columns.concat(actionColumn)}
         pageSize={5}
         rowsPerPageOptions={[5]}
-        checkboxSelection
       />
     </div>
   );
